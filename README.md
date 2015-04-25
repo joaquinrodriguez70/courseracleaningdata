@@ -10,12 +10,12 @@ The class project for [Getting and Cleaning Data](https://www.coursera.org/cours
 
 1. Download the zip file from [this URL](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip).
 2. Unzip the file.
-3. Download the R script ([run_analysis])((https://github.com/joaquinrodriguez70/courseracleaningdata/blob/master/run_analysis.R)) into the unizpped directory created in the above step.
+3. Download the R script ([run_analysis])((https://raw.githubusercontent.com/joaquinrodriguez70/courseracleaningdata/master/run_analysis.R)) into the unizpped directory created in the above step.
 4. Run the R script ([run_analysis.R](run_analysis.R)).** Note that it requires the [dplyr package](http://cran.r-project.org/web/packages/dplyr), which can be downloaded from CRAN.
 
 **The output of the R script is a tidy data set, [JRLDATA.txt](JRLDATA.txt).**
 
-You can read more about the data and the analysis in the [code book](CodeBook.md).
+The data is described in the[Code book](code-book.md).
 
 
 ** In this repo thwew is a copy of the data files
