@@ -1,4 +1,4 @@
-# Coursera Cleaning data Assignment
+# Coursera Cleaning Data Assignment
 This is a repo for the assigment in the coursera cleaning data  course.
 
 The assigment project is formed by
@@ -16,11 +16,9 @@ samsung mobile devices
 2. Unzip the file.
 3. Download the R script ([run_analysis.R](https://raw.githubusercontent.com/joaquinrodriguez70/courseracleaningdata/master/run_analysis.R)) into the unizpped directory created in the above step.
 4. Adjust the current directory (line 62 ) (txtFeaturesDirectory) if needed
-5. Run the R script ([run_analysis.R](run_analysis.R)).** Note that it requires
-* [dplyr package](http://cran.r-project.org/web/packages/dplyr), which can be downloaded from CRAN.
-* [reshape2 package](http://cran.r-project.org/web/packages/reshape2), which can be downloaded from CRAN.
+5. Run the R script ([run_analysis.R](run_analysis.R)).** Note that it requires:  [dplyr package](http://cran.r-project.org/web/packages/dplyr), which can be downloaded from CRAN. And [reshape2 package](http://cran.r-project.org/web/packages/reshape2), which can be downloaded from CRAN.
 
-**The output of the R script is a tidy data set, [JRLDATA.txt](JRLDATA.txt).**
+**The output of the R script is a tidy data set, [JRLDATA.csv](JRLDATA.csv).**
 
 The data is described in the[Code book](code-book.md).
 

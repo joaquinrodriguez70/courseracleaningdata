@@ -113,7 +113,7 @@ setTxtProgressBar(pb,6)
 
 #Final step write results
 setwd(curdir)
-write.table(tidyResult,row.names = FALSE,file = "JRLDATA.txt")
+write.table(tidyResult,row.names = FALSE,file = "JRLDATA.csv",sep = ",")
 #return the data frame as a result
 tidyResult
 

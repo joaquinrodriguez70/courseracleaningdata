@@ -27,7 +27,7 @@ The full information about the files is available in `README.txt`. More informat
 
 The raw signal data in the ("Inertial Signals") are ommited from the processing.
 
-### Processing steps (done by the run_analysis script)
+### Processing steps (done by the run_analysis.R script)
 
 1. The features and activities area read into data frames 
 2. The test and train data files are read  and consolidated with the correspondig subject and activity 
@@ -36,5 +36,7 @@ The raw signal data in the ("Inertial Signals") are ommited from the processing.
 
 * The columns different of the  "mean, Mean and std" observations are filtered out 
 * The activity column is in text form 
+* The rows consist of the medium of the observations grouped by activity type
 
-5. The tidy data set was output to a TXT file.
+5. The tidy data set was output to a csv file.
+6. The total number of rows is 180 ( 30 subjects and 6 measures per subject ( the medium of each activity type))
