@@ -22,7 +22,8 @@ Volunteers activities in  6 different activities were recorded by Samsung smatph
 * `subject_test.txt`: An integer vector indicating the subject associated with the test observations in  `X_test.txt`.
 * `y_test.txt`: An integer vector indicating the id of the activity related with the test observations in `X_test.txt`.
 
-The full information about the files is available in `README.txt`. More information about the features is available in `features_info.txt`.
+The full information about the files is available in [README.txt](README.txt).
+More information about the features is available in  [features_info.txt](features_info.txt).
 
 
 The raw signal data in the ("Inertial Signals") are ommited from the processing.
@@ -31,7 +32,7 @@ The raw signal data in the ("Inertial Signals") are ommited from the processing.
 
 1. The features and activities area read into data frames 
 2. The test and train data files are read  and consolidated with the correspondig subject and activity 
-3. The test and tran data are meged into one data frame
+3. The test and tran data are merged into one data frame
 4. The data frame is written into a file
 
 * The columns different of the  "mean, Mean and std" observations are filtered out 
