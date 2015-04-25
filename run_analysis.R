@@ -59,7 +59,7 @@ createTidy<-function (){
 # -1 means all data is read
 #--------------------------------------------------------------------
 readNrows = -1
-txtFeaturesDirectory <-"./"
+txtFeaturesDirectory <-"~/Documents/week6/UCI HAR Dataset"
 txtTestDirectory <-paste(txtFeaturesDirectory,"/test/",sep="")
 txtTrainDirectory<-paste(txtFeaturesDirectory,"/train/",sep="")
 
@@ -78,7 +78,7 @@ yTrainDataFileName <-"y_train.txt"
 columnsRegex <-".Mean.|.mean.|.std.|Subject|Activity"
 
 #A progress bar is added
-pb <-txtProgressBar(min = 0, max = 5, initial = 0, char = "=",style=3)
+pb <-txtProgressBar(min = 0, max = 6, initial = 0, char = "=",style=3)
 
 #Step 1, get names of measures (column  names) from file 
 columnsNames561  <-readFileIntoDF (txtFeaturesDirectory,featuresFileName) 
@@ -103,9 +103,17 @@ setTxtProgressBar(pb,4)
 df_data_test<-dplyr::select(df_data_test,matches(columnsRegex))
 
 setTxtProgressBar(pb,5)  
+
+#Setep 7 use reshape to get the avg
+df_melted <- melt(df_data_test, id=c("Subject","Activity"))
+tidyResult <- dcast(df_melted, Subject+Activity ~ variable, mean)
+
+setTxtProgressBar(pb,6)  
+
 #Final step write results
-write.table(x,row.names = FALSE,file = "JRLDATA.txt")
+
+write.table(tidyResult,row.names = FALSE,file = "JRLDATA.txt")
 #return the data frame as a result
-df_data_test
+tidyResult
 
 }
