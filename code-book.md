@@ -13,6 +13,7 @@ Volunteers activities in  6 different activities were recorded by Samsung smatph
 ####Metadata
 * `features.txt`: Names of the 561 features.
 * `activity_labels.txt`: Names and IDs for each of the 6 activities.
+
 ####Data
 * `X_train.txt`: 7352 observations  (70 % of all observations)
 * `subject_train.txt`: An integer vector indicating the subject associated with the train observations in `X_train.txt`.
