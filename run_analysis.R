@@ -57,6 +57,7 @@ createTidy<-function (){
 #DEFINITIONS
 #If readNrows > -1 a subset is read ( useful for testing)
 # -1 means all data is read
+# Please change txtFeaturesDirectory  as appropiate for your environment
 #--------------------------------------------------------------------
 readNrows = -1
 txtFeaturesDirectory <-"~/Documents/week6/UCI HAR Dataset"
