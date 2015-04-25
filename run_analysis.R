@@ -59,7 +59,7 @@ createTidy<-function (){
 # -1 means all data is read
 #--------------------------------------------------------------------
 readNrows = -1
-txtFeaturesDirectory <-"./"
+txtFeaturesDirectory <-"~/Documents/week6/UCI HAR Dataset"
 txtTestDirectory <-paste(txtFeaturesDirectory,"/test/",sep="")
 txtTrainDirectory<-paste(txtFeaturesDirectory,"/train/",sep="")
 
@@ -79,7 +79,7 @@ columnsRegex <-".Mean.|.mean.|.std.|Subject|Activity"
 
 #A progress bar is added
 pb <-txtProgressBar(min = 0, max = 6, initial = 0, char = "=",style=3)
-
+curdir <-getwd()
 #Step 1, get names of measures (column  names) from file 
 columnsNames561  <-readFileIntoDF (txtFeaturesDirectory,featuresFileName) 
 #Step 2, get names of types of activities from file 
@@ -111,7 +111,7 @@ tidyResult <- dcast(df_melted, Subject+Activity ~ variable, mean)
 setTxtProgressBar(pb,6)  
 
 #Final step write results
-
+setwd(curdir)
 write.table(tidyResult,row.names = FALSE,file = "JRLDATA.txt")
 #return the data frame as a result
 tidyResult
