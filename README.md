@@ -14,7 +14,7 @@ samsung mobile devices
 
 1. Download the zip file from [this URL](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip).
 2. Unzip the file.
-3. Download the R script ([run_analysis])((https://raw.githubusercontent.com/joaquinrodriguez70/courseracleaningdata/master/run_analysis.R)) into the unizpped directory created in the above step.
+3. Download the R script ([run_analysis.R](https://raw.githubusercontent.com/joaquinrodriguez70/courseracleaningdata/master/run_analysis.R)) into the unizpped directory created in the above step.
 4. Run the R script ([run_analysis.R](run_analysis.R)).** Note that it requires the [dplyr package](http://cran.r-project.org/web/packages/dplyr), which can be downloaded from CRAN.
 
 **The output of the R script is a tidy data set, [JRLDATA.txt](JRLDATA.txt).**
