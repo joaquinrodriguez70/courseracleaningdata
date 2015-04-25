@@ -59,7 +59,7 @@ createTidy<-function (){
 # -1 means all data is read
 #--------------------------------------------------------------------
 readNrows = -1
-txtFeaturesDirectory <-"~/Documents/week6/UCI HAR Dataset"
+txtFeaturesDirectory <-"./"
 txtTestDirectory <-paste(txtFeaturesDirectory,"/test/",sep="")
 txtTrainDirectory<-paste(txtFeaturesDirectory,"/train/",sep="")
 
